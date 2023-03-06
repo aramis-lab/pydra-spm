@@ -13,7 +13,7 @@ pydra = "^0.21"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.1.0"
-isort = "^5.11.4"
+isort = "^5.11.5"
 
 [tool.poetry.group.docs.dependencies]
 Sphinx = "^5.0.0"
