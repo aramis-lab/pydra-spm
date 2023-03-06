@@ -519,14 +519,14 @@ test = ["codecov", "pytest", "pytest-cov", "pytest-regressions"]
 
 [[package]]
 name = "pydra"
-version = "0.21"
+version = "0.22"
 description = "Pydra dataflow engine"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pydra-0.21-py3-none-any.whl", hash = "sha256:188cd8ff6e8b819104bce22cd51b00af5f1e4802fa30b08a801a78661ac66e14"},
-    {file = "pydra-0.21.tar.gz", hash = "sha256:93209b7840537a3a1aeb449eb0a052fc02ab879d2c512c6441b8e94dbeaa45e2"},
+    {file = "pydra-0.22-py3-none-any.whl", hash = "sha256:b764b147f80e19ca900ab15bbccc2e16529d353019b6d26285a1ba0bd2c2efde"},
+    {file = "pydra-0.22.tar.gz", hash = "sha256:8e37e621f61c76e54b82dfbb1b53fe46dd117c76872d9e2ac2b4c7b95fb89d4c"},
 ]
 
 [package.dependencies]
@@ -867,4 +867,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.7"
-content-hash = "214d5e9b956a14269f1b07236303613609789f6ba660bc5680b814ec97623433"
+content-hash = "75d574223018368de708e341cfa9bf9e037d6ccb13b5c75e424a44d6aa641408"
