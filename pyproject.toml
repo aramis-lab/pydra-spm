@@ -12,7 +12,7 @@ python = "^3.7"
 pydra = "^0.22"
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.1.0"
+black = "^23.3.0"
 isort = "^5.11.5"
 
 [tool.poetry.group.docs.dependencies]
