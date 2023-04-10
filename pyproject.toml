@@ -20,7 +20,7 @@ Sphinx = "^5.0.0"
 pydata-sphinx-theme = "^0.13.3"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^7.2.2"
+pytest = "^7.3.0"
 
 [build-system]
 requires = ["poetry-core"]
