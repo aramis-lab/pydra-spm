@@ -42,6 +42,7 @@ To check the documentation:
 
 ```console
 hatch run docs:serve --open-browser
+```
 
 ## Licensing
 
