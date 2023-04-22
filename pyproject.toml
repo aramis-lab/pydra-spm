@@ -1,30 +1,48 @@
-[tool.poetry]
-name = "pydra-spm"
-version = "0.0.1"
-description = "Pydra tasks for SPM"
-authors = ["The Aramis Lab"]
-license = "Apache-2.0"
-readme = "README.md"
-packages = [{include = "pydra"}]
-
-[tool.poetry.dependencies]
-python = "^3.7"
-pydra = "^0.22"
-
-[tool.poetry.group.dev.dependencies]
-black = "^23.3.0"
-isort = "^5.11.5"
-
-[tool.poetry.group.docs.dependencies]
-Sphinx = "^5.0.0"
-pydata-sphinx-theme = "^0.13.3"
-
-[tool.poetry.group.test.dependencies]
-pytest = "^7.3.1"
-
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pydra-spm"
+version = "0.0.0"
+description = "Pydra tasks for SPM"
+readme = "README.md"
+requires-python = ">=3.7"
+license = "Apache-2.0"
+keywords = ["pydra", "neuroimaging", "spm"]
+authors = [
+  { name = "Ghislain Vaillant", email = "ghislain.vaillant@icm-institute.org" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+  "attrs >=22.1.0",
+  "pydra >=0.22",
+]
+
+[project.urls]
+Documentation = "https://aramis-lab.github.io/pydra-spm/"
+Issues = "https://github.com/aramis-lab/pydra-spm/issues"
+Source = "https://github.com/aramis-lab/pydra-spm"
+
+[tool.black]
+target-version = ["py37"]
+line-length = 120
+
+[tool.isort]
+profile = "black"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
@@ -32,10 +50,3 @@ addopts = [
   "--doctest-modules",
   "--doctest-continue-on-failure",
 ]
-
-[tool.black]
-target-version = ["py37"]
-
-[tool.isort]
-py_version = 37
-profile = "black"
