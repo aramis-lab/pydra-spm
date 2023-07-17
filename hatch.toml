@@ -1,5 +1,5 @@
 [build.targets.wheel]
-only-include = ["src/pydra/tasks/freesurfer"]
+only-include = ["src/pydra/tasks/spm"]
 sources = ["src"]
 
 [envs.default]
